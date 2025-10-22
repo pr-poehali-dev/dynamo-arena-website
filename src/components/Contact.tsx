@@ -148,6 +148,31 @@ const Contact = () => {
 
             <Card>
               <CardHeader>
+                <CardTitle>Как добраться</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f5e6d7c8b9a0123456789abcdef0123&amp;source=constructor"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    title="Карта проезда"
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="MapPin" size={20} className="text-primary mt-0.5" />
+                  <div>
+                    <p className="font-medium">м. Динамо</p>
+                    <p className="text-sm text-muted-foreground">5 минут пешком от метро</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle>Социальные сети</CardTitle>
               </CardHeader>
               <CardContent>

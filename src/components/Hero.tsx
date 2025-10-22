@@ -10,7 +10,7 @@ const Hero = () => {
           backgroundImage: 'url(https://cdn.poehali.dev/projects/854ab1b9-6622-4c36-9856-3c7eb7e3a805/files/e6a30144-c7e8-453d-974f-987a3627033c.jpg)',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">
@@ -19,7 +19,7 @@ const Hero = () => {
             Арена Динамо
           </span>
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
+        <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
           Легендарная спортивная площадка для волейбола, гандбола, киберспорта и грандиозных концертов
         </p>
         
@@ -51,7 +51,7 @@ const Hero = () => {
               style={{ animationDelay: `${400 + index * 100}ms` }}
             >
               <Icon name={item.icon as any} size={32} className="text-primary" />
-              <span className="text-sm text-muted-foreground">{item.label}</span>
+              <span className="text-sm text-white/80 font-medium">{item.label}</span>
             </div>
           ))}
         </div>
