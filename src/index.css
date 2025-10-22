@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 13% 13%;
+    --background: 220 15% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 13%;
+    --card: 220 20% 14%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 13%;
+    --popover: 220 20% 14%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 210 100% 45%;
     --primary-foreground: 0 0% 100%;
@@ -19,8 +19,8 @@
     --secondary: 280 60% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 13% 95%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 9% 70%;
 
     --accent: 280 60% 50%;
     --accent-foreground: 0 0% 100%;
@@ -28,8 +28,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
     --ring: 210 100% 45%;
 
     --radius: 0.75rem;
@@ -97,5 +97,24 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: url("https://cdn.poehali.dev/projects/854ab1b9-6622-4c36-9856-3c7eb7e3a805/files/7446fc0e-134d-4f52-83b3-2c3c95d7cae7.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(14, 21, 58, 0.95) 0%,
+      rgba(31, 17, 51, 0.95) 100%
+    );
+    z-index: -1;
   }
 }
