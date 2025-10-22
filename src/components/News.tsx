@@ -35,8 +35,11 @@ const News = () => {
     <section id="news" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Новости</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 relative inline-block">
+            Новости
+            <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-6">
             Последние события и анонсы арены
           </p>
         </div>
